@@ -1,0 +1,10 @@
+<!-- <textarea rows="6" [value]="Newpost" #postinput></textarea> -->
+<!-- // Two way binding using ngmodel -->
+<mat-card>
+<mat-form-field>
+<textarea rows="6" matInput [(ngModel)]="enterredvalue"></textarea>
+</mat-form-field>
+<button mat-raised-button	color='primary' (click)='onAddPost()'>save post</button>
+
+</mat-card>
+
