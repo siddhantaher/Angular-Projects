@@ -5,7 +5,7 @@
     <form (submit)='onAddPost(postForm)'#postForm='ngForm'>
         <!-- when we are using we can omit the two way binding and instead of that we can use normal NgModel which will validate the form -->
             <mat-form-field>
-                    <input matInput type="text" name='title'ngModel required #title='ngModel'>
+                    <input matInput type="text" name='title'ngModel required #title='ngModel'placeholder='Post Title'>
                     <!-- to get the access of the data inside the component
                     there are two ways to achive it
                     1. using local refrencce variable such as #(any name we want to give) and add ngmodel to it, so that it can access the values and can judge whether the values ae valid or not
@@ -16,7 +16,7 @@
 
                 </mat-form-field>
             <mat-form-field>
-            <textarea rows="4" matInput name='content' ngModel required #content='ngModel'></textarea>
+            <textarea rows="4" matInput name='content' ngModel required #content='ngModel' placeholder='Post Content'></textarea>
             <mat-error *ngIf="content.invalid">Please Enter the post Content</mat-error>
 
             </mat-form-field>
