@@ -13,7 +13,7 @@ const Post= require('./models/post')
 
 
 // database connection
-mongoose.connect("mongodb+srv://Siddhantaher:c5YUuaZwIoWbYb94@cluster0-gbqhg.mongodb.net/node-angular?retryWrites=true",{useNewUrlParser: true}).then(()=>{
+mongoose.connect("mongodb+srv://Siddhantaher:@cluster0-gbqhg.mongodb.net/node-angular?retryWrites=true",{useNewUrlParser: true}).then(()=>{
 console.log('Connected to the database')
 }).catch(()=>{
     console.log('errro occured')
